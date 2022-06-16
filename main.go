@@ -1,11 +1,8 @@
 package main
 
-func main() {
-	cards := deck{"Ace of Diamonds", newCard()}
-	cards = append(cards, "Six of Spades")
-	cards.print()
-}
+import "fmt"
 
-func newCard() string {
-	return "Five of Diamonds"
+func main() {
+	cards := newDeck()
+	fmt.Println(cards.toString())
 }
